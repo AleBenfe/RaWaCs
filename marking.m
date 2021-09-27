@@ -157,31 +157,7 @@ function help_cb(btn)
 end
 
 function list = getImages()
-    % jpeg
-    L = dir('*.jpeg');
-    list = cell(1,length(L));
-    for i = 1:length(L)
-        list{i} = L(i).name;
-    end
-    % bmp
-    L = dir('*.bmp');
-    list2 = cell(1,length(L));
-    for i = 1:length(L)
-        list2{i} = L(i).name;
-    end
-    list = [list,list2];
-    % jpg
-    L = dir('*.jpg');
-    list2 = cell(1,length(L));
-    for i = 1:length(L)
-        list2{i} = L(i).name;
-    end
-    list = [list,list2];
-    % png
-    L = dir('*.png');
-    list2 = cell(1,length(L));
-    for i = 1:length(L)
-        list2{i} = L(i).name;
-    end
-    list = [list,list2];
+    % jpeg bmp jpg png
+    L = [dir('*.jpeg');dir('*.bmp');dir('*.jpg');dir('*.png')];
+    list = {L.name};
 end
