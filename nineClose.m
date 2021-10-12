@@ -5,8 +5,8 @@ function Z = nineClose(X)
 %
 % Z = nineClose(X)
 %
-% is a m x n x 27 array, where [m,n] is the size of X. It provides the
-% 8-neighbourhood of a pixel.
+% is a m x n x 9p array, where [m,n,p] is the size of X. It provides the
+% 8-neighbourhood of a pixel (and the pixel itself).
 %
 % -------------------------------------------------------------------------
 % MANDATORY INPUT
