@@ -1,12 +1,12 @@
 function [D,indS,Z] = distance(X)
 %
 % distance computes the inverse of the distance of each pixel in the image
-% X from all the user marked labels.
+% X from all ist 4-neighbours.
 %
 % [D,inds,Z] = distance(X)
 %
-% provides the inverse of the distances of the image pixels from each
-% marked region. These quantities are used as weights in the Laplacian
+% provides the inverse of the distances of the image pixels from all 
+% ist 4-neighbours. These quantities are used as weights in the Laplacian
 % matrix. The matrix Z contains the neighbourhood of each pixel, whilst
 % indS contains the indexes of the neighbours.
 %
